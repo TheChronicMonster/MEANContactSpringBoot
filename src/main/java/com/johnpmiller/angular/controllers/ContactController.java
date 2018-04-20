@@ -37,8 +37,10 @@ public class ContactController {
 		Contact c = contactRepository.findOne(id);
 		if (contact.getName() != null)
 			c.setName(contact.getName());
-		if (contact.getCity() != null)
+		if (contact.getAddress() != null)
 			c.setAddress(contact.getAddress());
+		if (contact.getCity() != null)
+			c.setAddress(contact.getCity());
 		if (contact.getPhone() != null)
 			c.setPhone(contact.getPhone());
 		if (contact.getEmail() != null)
