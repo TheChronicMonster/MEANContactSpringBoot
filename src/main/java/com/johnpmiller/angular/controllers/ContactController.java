@@ -40,7 +40,7 @@ public class ContactController {
 		if (contact.getAddress() != null)
 			c.setAddress(contact.getAddress());
 		if (contact.getCity() != null)
-			c.setAddress(contact.getCity());
+			c.setCity(contact.getCity());
 		if (contact.getPhone() != null)
 			c.setPhone(contact.getPhone());
 		if (contact.getEmail() != null)
