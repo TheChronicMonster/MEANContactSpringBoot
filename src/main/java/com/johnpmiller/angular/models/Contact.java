@@ -47,7 +47,7 @@ public class Contact {
 	}
 	
 	public void setLName(String lname) {
-		this.lname=lname;
+		this.lname = lname;
 	}
 
 	public String getAddress() {

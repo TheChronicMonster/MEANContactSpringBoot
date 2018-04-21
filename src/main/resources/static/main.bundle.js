@@ -195,8 +195,7 @@ var ContactCreateComponent = /** @class */ (function () {
         var _this = this;
         this.http.post('/contacts', this.contact)
             .subscribe(function (res) {
-            var id = res['id'];
-            _this.router.navigate(['/contact-detail', id]);
+            _this.router.navigate(['/contact-detail', res]);
         }, function (err) {
             console.log(err);
         });
@@ -345,7 +344,7 @@ var ContactEditComponent = /** @class */ (function () {
         this.http.put('/contacts/' + id, data)
             .subscribe(function (res) {
             var id = res['id'];
-            _this.router.navigate(['/contact-detail', id]);
+            _this.router.navigate(['/contact']);
         }, function (err) {
             console.log(err);
         });
