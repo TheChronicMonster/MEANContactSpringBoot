@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-	selector: 'app-contact-detail',
+  selector: 'app-contact-detail',
 	templateUrl: './contact-detail.component.html',
 	styleUrls: ['./contact-detail.component.css']
 })

@@ -28,7 +28,7 @@ export class ContactEditComponent implements OnInit {
 	  this.http.put('/contacts/'+id, data)
 	    .subscribe(res => {
 	      let id = res['id'];
-	      this.router.navigate(['/contact-detail', id]);
+	      this.router.navigate(['/contact']);
 	    }, (err) => {
 	      console.log(err);
 	    }
