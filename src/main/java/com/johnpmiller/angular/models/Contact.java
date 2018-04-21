@@ -7,7 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Contact {
 	@Id
 	String id;
-	String name;
+	String fname;
+	String lname;
 	String address;
 	String city;
 	String phone;
@@ -16,8 +17,9 @@ public class Contact {
 	public Contact() {
 	}
 
-	public Contact(String name, String address, String city, String phone, String email) {
-		this.name = name;
+	public Contact(String fname, String lname, String address, String city, String phone, String email) {
+		this.fname = fname;
+		this.lname = lname;
 		this.address = address;
 		this.city = city;
 		this.phone = phone;
@@ -32,12 +34,20 @@ public class Contact {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFName() {
+		return fname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFName(String fname) {
+		this.fname = fname;
+	}
+	
+	public String getLName() {
+		return lname;
+	}
+	
+	public void setLName(String lname) {
+		this.lname=lname;
 	}
 
 	public String getAddress() {
