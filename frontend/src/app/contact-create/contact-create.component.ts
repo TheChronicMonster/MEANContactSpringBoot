@@ -19,7 +19,8 @@ export class ContactCreateComponent implements OnInit {
   saveContact() {
     this.http.post('/contacts', this.contact)
       .subscribe(res => {
-        this.router.navigate(['/contact-detail', res]);
+        const id = res['id'];
+        this.router.navigate(['/contact-detail', id]);
       }, (err) => {
         console.log(err);
       }
